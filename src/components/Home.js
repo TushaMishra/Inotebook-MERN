@@ -8,4 +8,4 @@ const Home = () => {
   )
 }
 
-export default Homeknofnoeqno
+export default Home
