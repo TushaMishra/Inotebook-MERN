@@ -8,20 +8,23 @@ import{
   Routes
 } from "react-router-dom";
 import NoteState from './context/notes/NoteState';
+import Alert from './components/Alert';
 
 function App() {
   return (
     <>
     <NoteState>
-      <h2>This is app</h2>
       <Router>
         <Navbar/>
+        <Alert message="This is amazing React course"/>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
         </Routes>
       </Router>
     </NoteState>
+    git reset --hard HEAD~1
+
     </>
   );
 }
